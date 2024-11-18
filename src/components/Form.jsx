@@ -175,13 +175,6 @@ const Form = () => {
       return;
     }
 
-  //     // Validate required fields
-  // if (!passedNptel) {
-  //   toast.error("Please select whether you passed the NPTEL exam");
-  //   setLoading(false);
-  //   return;
-  }
-
     const formData = new FormData();
     formData.append("file", file);
     formData.append("registrationNumber", registrationNumber);
