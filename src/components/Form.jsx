@@ -167,12 +167,20 @@ const Form = () => {
       !subject ||
       !nptelRollNo ||
       !branch ||
-      !outlookMail
+      !outlookMail || 
+      !passedNptel
     ) {
       toast.error("Please fill in all fields and upload a PDF file");
       setLoading(false);
       return;
     }
+
+  //     // Validate required fields
+  // if (!passedNptel) {
+  //   toast.error("Please select whether you passed the NPTEL exam");
+  //   setLoading(false);
+  //   return;
+  }
 
     const formData = new FormData();
     formData.append("file", file);
