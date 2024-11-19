@@ -963,7 +963,7 @@ const Form = () => {
 
         try {
           const response = await axios.post(
-            "https://nptel-backend.onrender.com/api/verify-certificate",
+            "https://nptel-backend.onrender.com/verify-certificate",
             formData,
             {
               headers: { "Content-Type": "multipart/form-data" },
