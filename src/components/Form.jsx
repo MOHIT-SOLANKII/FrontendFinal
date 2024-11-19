@@ -856,6 +856,7 @@ const Form = () => {
 
   const AllowedEmails = [
     "aditya.229301003@muj.manipal.edu",
+    "muj1402@muj.manipal.edu",
     "anurag.229301017@muj.manipal.edu",
     "arunabh.229301096@muj.manipal.edu",
     "yuvraj.229301114@muj.manipal.edu",
