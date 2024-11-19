@@ -969,8 +969,8 @@ const Form = () => {
               headers: { "Content-Type": "multipart/form-data" },
             }
           );
-
-          if (response.data.status === "success") {
+        
+          if (response.data.success && response.data.verified) {  // Changed this line
             setIsCertificateVerified(true);
             setVerificationStatus("success");
             toast.success("Certificate verified successfully!");
