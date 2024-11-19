@@ -962,7 +962,7 @@ const Form = () => {
 
         try {
           const response = await axios.post(
-            "http://127.0.0.1:8000/api/verify-certificate",
+            "https://nptel-backend.onrender.com/api/verify-certificate",
             formData,
             {
               headers: { "Content-Type": "multipart/form-data" },
@@ -1005,7 +1005,7 @@ const Form = () => {
     setOtpLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/email/send-otp",
+        "https://nptel-backend.onrender.com/api/email/send-otp",
         {
           email: outlookMail,
         }
@@ -1087,7 +1087,7 @@ const Form = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/upload",
+        "https://nptel-backend.onrender.com/upload",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
