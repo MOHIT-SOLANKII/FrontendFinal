@@ -86,7 +86,7 @@ const Form = () => {
 
         try {
           const response = await axios.post(
-            `${import.meta.process.env.VITE_APP_BACKEND_URL}/verify-certificate`,
+            `${import.meta.env.VITE_APP_BACKEND_URL}/verify-certificate`,
             formData,
             {
               headers: { "Content-Type": "multipart/form-data" },
@@ -129,7 +129,7 @@ const Form = () => {
     setOtpLoading(true);
     try {
       const response = await axios.post(
-        `${import.meta.process.env.VITE_APP_BACKEND_URL}/api/email/send-otp`,
+        `${import.meta.env.VITE_APP_BACKEND_URL}/api/email/send-otp`,
         {
           email: outlookMail,
         }
@@ -211,7 +211,7 @@ const Form = () => {
 
     try {
       const response = await axios.post(
-        `${import.meta.process.env.VITE_APP_BACKEND_URL}/upload`,
+        `${import.meta.env.VITE_APP_BACKEND_URL}/upload`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
